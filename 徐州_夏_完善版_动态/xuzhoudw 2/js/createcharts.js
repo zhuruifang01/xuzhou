@@ -113,8 +113,8 @@
                         x:'center'
 
                     },
-                    grid: {  //图表的位置
-                        left: '6%',
+                    grid: {
+                        left: '3%',
                         right: '4%',
                         bottom: '3%',
                         containLabel: true
@@ -183,7 +183,7 @@
             });
         }
   //创建 折线图的函数：【左下】
-       createcharts.chart3=function (select3,datatime){
+       createcharts.chart3=function (select3,datatime,dataTv,dataPage){
            $(function(){
                var chart3= echarts.init(document.getElementById('chart3'));
                var option = {
@@ -249,6 +249,7 @@
                    yAxis : [
                        {
                            type : 'value',
+                           interval: 20,
                            axisLabel: {
                                formatter: '{value}',
                                show: true,
@@ -267,12 +268,14 @@
                        {
                            name:'视频',
                            type:'line',
-                           data:[1,0.2,0.3,0.5,0.6,0.4]
+                           //data:[1,0.2,0.3,0.5,0.6,0.4]
+                           data:dataTv
                        },
                        {
                            name:'网页',
                            type:'line',
-                           data:[0.8,0.9,0.6,0.8,0.7,0.4]
+                           //data:[0.8,0.9,0.6,0.8,0.7,0.4]
+                           data:dataPage
                        }
                    ]
                };
@@ -280,7 +283,7 @@
            });
        }
   //创建 折线+柱状图 的函数：【左中】
-  createcharts.chart4=function(select3,datatime){
+  createcharts.chart4=function(select3,datatime,LC_UserCount){
       $(function(){
           var  option = {
               tooltip: {
@@ -330,8 +333,7 @@
                       type: 'value',
                       // name: '水量/ml',
                       min: 0,
-                      max: 250,
-                      interval: 50,
+                      interval: 200,
                       axisLabel: {
                           formatter: '{value} '
                       },
@@ -369,7 +371,7 @@
                               }
                           }
                       },
-                      data:[50, 75, 100, 150, 200, 250]
+                      data:LC_UserCount
                   },
                   //折线：
                   {
@@ -380,7 +382,7 @@
                               color:'#fff'
                           }
                       },
-                      data:[50, 75, 100, 150, 200, 250]
+                      data:LC_UserCount
                   }
               ]
           };

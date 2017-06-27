@@ -10,8 +10,8 @@
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/echarts.min.js"></script>
     <script src="js/createcharts.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/data.js"></script>
+    <script src="js/data3.js"></script>
+    <script src="js/index4.js"></script>
 </head>
 <body>
 <!--头部-->
@@ -22,7 +22,7 @@
        <div class="title">
            2017徐州
            <span>奥体中心</span>
-           数据保障
+           	数据保障
        </div>
        <div id="show" style="float:right;font-size:25px;color:#fff;margin-right:50px;line-height:60px;"></div>
 </div>
@@ -38,7 +38,7 @@
                             <span><img src="img/icon.png" alt=""></span>
                             <span>KQI指标</span>
                         </div>
-                        <div class="data" id="KQIdata">
+                        <div class="data KQIdata" id="KQIdata">
                               <div class="huadong">
                                     <ul>
                                         <li>首包时延</li>
@@ -53,7 +53,7 @@
                                         <li>0.98</li>
                                     </ul>
                                     <ul>
-                                        <li>视屏下载速率</li>
+                                        <li>视频下载速率</li>
                                         <li>1669</li>
                                     </ul>
                                     <ul>
@@ -80,7 +80,7 @@
                             <span>KPI指标</span>
                         </div>
                         <div class="data">
-                            <div class="huadong">
+                            <div class="huadong KPIdata">
                                     <ul>
                                         <li>RRC连接建立成功率</li>
                                         <li>99.90%</li>
@@ -90,24 +90,24 @@
                                         <li>99.90%</li>
                                     </ul>
                                     <ul>
-                                        <li class="teli">eNode同频且寻呼成功率</li>
+                                        <li class="teli">eNodeB内同频切换成功率</li>
                                         <li>99.90%</li>
                                     </ul>
                                     <ul>
-                                        <li>平均激活用户数</li>
-                                        <li>20</li>
+                                        <li>eNodeB间X2口同频切换成功率</li>
+                                        <li>20%</li>
                                     </ul>
                                     <ul>
-                                        <li>最大激活用户数</li>
-                                        <li>50</li>
+                                        <li>下行PRB平均利用率</li>
+                                        <li>50%</li>
                                     </ul>
                                     <ul>
-                                        <li>用户面PDCP上行流量</li>
-                                        <li>3G</li>
+                                        <li>上行PRB平均利用率</li>
+                                        <li>3MB</li>
                                     </ul>
                                     <ul>
-                                        <li>用户面PDCP下行流量</li>
-                                        <li>8G</li>
+                                        <li>覆盖优良比 (CQI>=7比例)</li>
+                                        <li>8MB</li>
                                     </ul>
                             </div>
                         </div>
@@ -258,7 +258,7 @@
                             <li>视频</li>
                             <li>网页</li>
                         </ul>
-                        <div class="data">
+                        <div class="data yunlonghudata">
                             <div class="huadong">
                                 <ul>
                                     <li>49_云龙湖堤坝路大石头</li>
@@ -310,6 +310,21 @@
                                     <li>98%</li>
                                     <li>98%</li>
                                 </ul>
+                                <ul>
+                                    <li>50_云龙湖休闲中心大伞下</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>50_云龙湖休闲中心大伞下</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>50_云龙湖休闲中心大伞下</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
                             </div>
                         </div>
             </div>
@@ -318,7 +333,7 @@
                     <div id="chart3" style="width:100%;height:100%;"></div>
             </div>
     </div>
-    <!--中部分-->
+    <!--中-->
     <div class="center">
          <ul class="Ctop">
              <li>
@@ -360,37 +375,37 @@
                  </ul>
              </div>
          </div>
-         <!--云龙湖景区-->
-         <div class="Cbottom Cbottom2">
-             <div class="imgbox">
-                 <div class="lunbo">
-                     <div class="spinner" style="position:absolute;left:220px;top:93px;">
-                         <div class="double-bounce1"></div>
-                         <div class="double-bounce2"></div>
-                     </div>
-                     <div class="spinner" style="position:absolute;left:280px;top:80px;">
-                         <div class="double-bounce1"></div>
-                         <div class="double-bounce2"></div>
-                     </div>
-                     <div class="spinner" style="position:absolute;left:400px;top:106px;">
-                         <div class="double-bounce1"></div>
-                         <div class="double-bounce2"></div>
-                     </div>
-                     <div class="spinner" style="position:absolute;left:480px;top:110px;">
-                         <div class="double-bounce1"></div>
-                         <div class="double-bounce2"></div>
-                     </div>
-                     <div class="spinner" style="position:absolute;left:557px;top:114px;">
-                         <div class="double-bounce1"></div>
-                         <div class="double-bounce2"></div>
-                     </div>
-                     <div class="spinner" style="position:absolute;left:614px;top:126px;">
-                         <div class="double-bounce1"></div>
-                         <div class="double-bounce2"></div>
-                     </div>
-                 </div>
-             </div>
-         </div>
+        <!--云龙湖景区-->
+        <div class="Cbottom Cbottom2">
+            <div class="imgbox">
+                <div class="lunbo">
+                    <div class="spinner" style="position:absolute;left:220px;top:93px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:280px;top:80px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:400px;top:106px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:480px;top:110px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:557px;top:114px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:614px;top:126px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--万达广场-->
         <div class="Cbottom Cbottom2 Cbottom3">
             <div class="imgbox">
@@ -415,20 +430,20 @@
             <div class="imgbox">
                 <div class="lunbo">
                     <div class="spinner" style="position:absolute;left:330px;top:56px;">
-                         <div class="double-bounce1"></div>
-                          <div class="double-bounce2"></div>
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
                     </div>
                     <div class="spinner" style="position:absolute;left:210px;top:350px;">
-                         <div class="double-bounce1"></div>
-                         <div class="double-bounce2"></div>
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
                     </div>
                     <div class="spinner" style="position:absolute;left:490px;top:320px;">
-                         <div class="double-bounce1"></div>
-                         <div class="double-bounce2"></div>
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
                     </div>
                     <div class="spinner" style="position:absolute;left:360px;top:380px;">
-                         <div class="double-bounce1"></div>
-                         <div class="double-bounce2"></div>
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
                     </div>
                 </div>
             </div>
@@ -465,43 +480,58 @@
                     <select name="" id="select3">
                         <optgroup label="奥体中心">
                             <option>全部</option>
-                            <option>245735_49奥体西区</option>
-                            <option>245735_50奥体西区</option>
-                            <option>245735_51奥体西区</option>
-                            <option>245735_52奥体西区</option>
+                            <option value="46011024573549">奥体东北</option>
+							<option value="46011024573550">奥体东南</option>
+							<option value="46011024573551">奥体西北</option>
+							<option value="46011024573552">奥体西南</option>
                         </optgroup>
                         <optgroup label="万达广场">
                             <option>全部</option>
-                            <option>万达广场商务楼</option>
-                            <option>万达soho1号</option>
-                            <option>万达广场soho1</option>
-                            <option>万达广场soho2号</option>
-                            <option>万达广场soho6号</option>
-                            <option>万达广场soho7号</option>
+                            <option value="46011061924657">241893商业楼2F6号弱电井</option>
+							<option value="46011061924913">241894商业楼2F2号弱电井</option>
+							<option value="46011061925169">241895soho1号15F弱电井</option>
+							<option value="46011061925425">241896soho2号15F弱电井</option>
+							<option value="46011061925681">241897soho6号5F弱电井</option>
+							<option value="46011061925937">241898soho7号5F弱电井</option>
                         </optgroup>
                         <optgroup label="苏宁广场">
                             <option>全部</option>
-                            <option>徐州富景广场-49</option>
-                            <option>徐州富景广场-50</option>
-                            <option>徐州富景广场-51</option>
-                            <option>徐州富景广场-52</option>
-                            <option>徐州富景广场-53</option>
-                            <option>徐州兴隆国际大酒店-52</option>
-                            <option>徐州兴隆国际大酒店-53</option>
-                            <option>徐州兴隆国际大酒店-54</option>
+                            <option value="46011062724657">49_徐州富景广场</option>
+							<option value="46011062724658">50_徐州富景广场</option>
+							<option value="46011062724659">51_徐州富景广场</option>
+							<option value="46011062724660">52_徐州富景广场</option>
+							<option value="46011062724661">53_徐州富景广场</option>
+							<option value="46011062796596">52_华联清风棋院</option>
+							<option value="46011062796597">53_华联清风棋院</option>
+							<option value="46011062796598">54_华联清风棋院</option>
+							<option value="46011223425841">49_11号弱电井,2F弱电井</option>
+							<option value="46011223425842">50_1号弱电井,B1F弱电井</option>
+							<option value="46011223425843">51_1号弱电井,2F弱电井</option>
+							<option value="46011223425844">52_2号弱电井,B1F弱电井</option>
+							<option value="46011223425845">53_3号弱电井,B1F弱电井</option>
+							<option value="46011223425846">54_4号弱电井,4F弱电井</option>
+							<option value="46011223425585">49_5号弱电井,B1F弱电井</option>
+							<option value="46011223425586">50_6号弱电井,B1F弱电井</option>
+							<option value="46011223425587">51_7号弱电井,B2F弱电井</option>
+							<option value="46011223425588">52_8号弱电井,3F弱电井</option>
+							<option value="46011223425589">53_9号弱电井,1F弱电井</option>
+							<option value="46011223425590">54_10号弱电井,B2F弱电井</option>
                         </optgroup>
                         <optgroup label="云龙湖景区">
                             <option>全部</option>
-                            <option>49_云龙湖堤坝路大石头</option>
-                            <option>50_云龙湖堤坝路大石头</option>
-                            <option>51_湖中路北头监控杆</option>
-                            <option>52_湖中路北头监控杆</option>
-                            <option>53_儿童游乐场西100米</option>
-                            <option>54_儿童游乐场西100米2</option>
-                            <option>55_艺术馆南</option>
-                            <option>56_艺术馆南</option>
-                            <option>49_云龙湖休闲中心大伞下</option>
-                            <option>50_云龙湖休闲中心大伞下</option>
+                            <option value="46011062490161">49_堤坝路大石头</option>
+							<option value="46011062490162">50_堤坝路大石头</option>
+							<option value="46011062490163">51_湖中路监控杆</option>
+							<option value="46011062490164">52_湖中路监控杆</option>
+							<option value="46011062490165">53_儿童游乐场</option>
+							<option value="46011062490166">54_儿童游乐场</option>
+							<option value="46011062490167">55_艺术馆南</option>
+							<option value="46011062490168">56_艺术馆南</option>
+							<option value="46011062490417">49_休闲中心大伞 </option>
+							<option value="46011062490418">50_休闲中心大伞</option>
+							<option value="46011062889777">49_利尔德搬迁</option>
+							<option value="46011062889778">50_利尔德搬迁</option>
+							<option value="46011062889779">51_利尔德搬迁</option>
                         </optgroup>
                     </select>
                 </li>
@@ -519,16 +549,17 @@
         </div>
         <!--右下-->
             <!--即时通信类：-->
-            <div class="Lbottom Rbottom">
+            <div class="Lbottom Rbottom tongxin-div">
                 <div class="title">业务排名表</div>
                 <ul class="title2">
-                    <li>及时通信</li>
+                    <li>即时通信</li>
                     <li>接入次数</li>
                     <li class="teshu">使用人数</li>
                     <li>流量</li>
                 </ul>
                 <div class="data">
                     <div class="huadong">
+                    	<!-- 
                             <ul>
                                 <li>微信</li>
                                 <li>623446</li>
@@ -589,20 +620,22 @@
                                 <li>10</li>
                                 <li>10000</li>
                             </ul>
+                            -->
                     </div>
                 </div>
             </div>
             <!--视频类：-->
-            <div class="Lbottom Rbottom">
+            <div class="Lbottom Rbottom shipin-div">
                 <div class="title">业务排名表</div>
                 <ul class="title2">
-                    <li>视屏类</li>
+                    <li>视频类</li>
                     <li>接入次数</li>
                     <li class="teshu">使用人数</li>
                     <li>流量</li>
                 </ul>
                 <div class="data">
                     <div class="huadong">
+                    	<!-- 
                         <ul>
                             <li>腾讯视频</li>
                             <li>31735</li>
@@ -663,11 +696,12 @@
                             <li>7</li>
                             <li>101487</li>
                         </ul>
+                        -->
                     </div>
                 </div>
             </div>
             <!--网页类：-->
-            <div class="Lbottom Rbottom">
+            <div class="Lbottom Rbottom web-div">
                 <div class="title">业务排名表</div>
                 <ul class="title2">
                     <li>网页类</li>
@@ -677,6 +711,7 @@
                 </ul>
                 <div class="data">
                     <div class="huadong">
+                    	<!-- 
                         <ul>
                             <li>腾讯网</li>
                             <li>13061</li>
@@ -736,7 +771,7 @@
                             <li>13066</li>
                             <li>1856</li>
                             <li>172405286</li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
