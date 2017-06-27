@@ -1,0 +1,28 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.action.extension" value=",action" />
+	<package name="base" namespace="/" extends="json-default">
+		<interceptors>
+			<interceptor-stack name="appStack">
+				<interceptor-ref name="profiling"></interceptor-ref>
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+ 		</interceptors>
+		<default-interceptor-ref name="appStack"></default-interceptor-ref>
+	
+		<default-action-ref name="actionError"></default-action-ref>
+		
+		<global-results>
+    		<result name="json" type="json">
+                <param name="root">responseJson</param>
+    		</result>
+    		<result name="error">/index.jsp</result>
+    	</global-results>
+	</package>
+	 <include file="config_struts/struts-main.xml"></include>
+</struts>
+

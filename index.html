@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2017徐州奥体中心大事件保障</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/createcharts.js"></script>
+    <script src="js/data3.js"></script>
+    <script src="js/index4.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+       <div class="logo">
+           <img src="img/logo.png" alt="">
+       </div>
+       <div class="title">
+           2017徐州
+           <span>奥体中心</span>
+           	数据保障
+       </div>
+       <div id="show" style="float:right;font-size:25px;color:#fff;margin-right:50px;line-height:60px;"></div>
+</div>
+<!--主体部分-->
+<div class="contain">
+    <!--左-->
+    <div class="left">
+        <!--左上-->
+            <div class="Ltop">
+                <!--KQI指标-->
+                <div class="zhibiao">
+                        <div class="title">
+                            <span><img src="img/icon.png" alt=""></span>
+                            <span>KQI指标</span>
+                        </div>
+                        <div class="data KQIdata" id="KQIdata">
+                              <div class="huadong">
+                                    <ul>
+                                        <li>首包时延</li>
+                                        <li>4007.05</li>
+                                    </ul>
+                                    <ul>
+                                        <li>页面打开时延</li>
+                                        <li>2664.2</li>
+                                    </ul>
+                                    <ul>
+                                        <li>页面访问成功率</li>
+                                        <li>0.98</li>
+                                    </ul>
+                                    <ul>
+                                        <li>视频下载速率</li>
+                                        <li>1669</li>
+                                    </ul>
+                                    <ul>
+                                        <li>播放卡顿</li>
+                                        <li>0.019</li>
+                                    </ul>
+                                    <ul>
+                                        <li>使用用户数</li>
+                                        <li>197337</li>
+                                    </ul>
+                                    <ul>
+                                        <li>总流量</li>
+                                        <li>95.41GB</li>
+                                    </ul>
+                                    <ul></ul>
+                                    <ul></ul>
+                              </div>
+                        </div>
+                </div>
+                <!--KPI指标-->
+                <div class="zhibiao">
+                        <div class="title">
+                            <span><img src="img/icon.png" alt=""></span>
+                            <span>KPI指标</span>
+                        </div>
+                        <div class="data">
+                            <div class="huadong KPIdata">
+                                    <ul>
+                                        <li>RRC连接建立成功率</li>
+                                        <li>99.90%</li>
+                                    </ul>
+                                    <ul>
+                                        <li>E-RAB建立成功率</li>
+                                        <li>99.90%</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="teli">eNodeB内同频切换成功率</li>
+                                        <li>99.90%</li>
+                                    </ul>
+                                    <ul>
+                                        <li>eNodeB间X2口同频切换成功率</li>
+                                        <li>20%</li>
+                                    </ul>
+                                    <ul>
+                                        <li>下行PRB平均利用率</li>
+                                        <li>50%</li>
+                                    </ul>
+                                    <ul>
+                                        <li>上行PRB平均利用率</li>
+                                        <li>3MB</li>
+                                    </ul>
+                                    <ul>
+                                        <li>覆盖优良比 (CQI>=7比例)</li>
+                                        <li>8MB</li>
+                                    </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        <!--左中 柱状图-->
+            <div class="Lcenter Lcenter1">
+                <div id="chart2" style="width:100%;height:100%;"></div>
+            </div>
+            <div class="Lcenter Lcenter2">
+                <div id="chart4" style="width:100%;height:100%;"></div>
+            </div>
+        <!--左下 1滑动-->
+            <!--奥体中心-->
+            <div class="Lbottom Lbottom1 Lbottom10">
+                            <div class="title">奥体中心各项指标优良率</div>
+                            <ul class="title2">
+                                <li>涉及小区</li>
+                                <li>视频</li>
+                                <li>网页</li>
+                            </ul>
+                            <div class="data">
+                                <div class="huadong">
+                                        <ul>
+                                            <li>奥体西北</li>
+                                            <li>76%</li>
+                                            <li>73%</li>
+                                        </ul>
+                                        <ul>
+                                            <li>奥体东北</li>
+                                            <li>74.5%</li>
+                                            <li>75.5%</li>
+                                        </ul>
+                                        <ul>
+                                            <li>奥体西南</li>
+                                            <li>74.4%</li>
+                                            <li>73.4%</li>
+                                        </ul>
+                                        <ul>
+                                            <li>奥体东南</li>
+                                            <li>74.6%</li>
+                                            <li>72.6%</li>
+                                        </ul>
+                                </div>
+                            </div>
+            </div>
+            <!--万达广场-->
+            <div class="Lbottom Lbottom1 Lbottom11">
+                        <div class="title">万达广场各项指标优良率</div>
+                        <ul class="title2">
+                            <li>涉及小区</li>
+                            <li>视频</li>
+                            <li>网页</li>
+                        </ul>
+                        <div class="data">
+                            <div class="huadong">
+                                <ul>
+                                    <li>万达广场商务楼</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>万达soho1号</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>万达广场soho1</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>万达广场soho2号</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>万达广场soho6号</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>万达广场soho7号</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                            </div>
+                        </div>
+            </div>
+            <!--苏宁广场-->
+            <div class="Lbottom Lbottom1 Lbottom12">
+                        <div class="title">苏宁广场各项指标优良率</div>
+                        <ul class="title2">
+                            <li>涉及小区</li>
+                            <li>视频</li>
+                            <li>网页</li>
+                        </ul>
+                        <div class="data">
+                            <div class="huadong">
+                                <ul>
+                                    <li>徐州富景广场-49</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>徐州富景广场-50</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>徐州富景广场-51</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>徐州富景广场-52</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>徐州富景广场-53</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>徐州兴隆国际大酒店-52</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>徐州兴隆国际大酒店-53</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>徐州兴隆国际大酒店-54</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                            </div>
+                        </div>
+            </div>
+            <!--露天场馆-->
+            <div class="Lbottom Lbottom1 Lbottom13">
+                        <div class="title">云龙湖各项指标优良率</div>
+                        <ul class="title2">
+                            <li>涉及小区</li>
+                            <li>视频</li>
+                            <li>网页</li>
+                        </ul>
+                        <div class="data yunlonghudata">
+                            <div class="huadong">
+                                <ul>
+                                    <li>49_云龙湖堤坝路大石头</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>50_云龙湖堤坝路大石头楼</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>51_湖中路北头监控所</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>52_湖中路北头监控</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>53_儿童游乐场西1001</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>54_儿童游乐场西1002</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>55_艺术馆南</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>56_艺术馆南</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>49_云龙湖休闲中心大伞下</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>50_云龙湖休闲中心大伞下</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>50_云龙湖休闲中心大伞下</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>50_云龙湖休闲中心大伞下</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                                <ul>
+                                    <li>50_云龙湖休闲中心大伞下</li>
+                                    <li>98%</li>
+                                    <li>98%</li>
+                                </ul>
+                            </div>
+                        </div>
+            </div>
+            <!--左下 2变折线-->
+            <div class="Lbottom Lbottom2">
+                    <div id="chart3" style="width:100%;height:100%;"></div>
+            </div>
+    </div>
+    <!--中-->
+    <div class="center">
+         <ul class="Ctop">
+             <li>
+                 <span>汇总</span>
+             </li>
+             <li>
+                 <div style="color:#52e4de;font-size:50px;">45714</div>
+                 <div style="color:#fff;font-size:18px;">接入次数</div>
+             </li>
+             <li>
+                 <div style="color:#c055ca;font-size:50px;">72686</div>
+                 <div style="color:#fff;font-size:18px;">使用人数</div>
+             </li>
+             <li>
+                 <div style="color:yellow;font-size:50px;">421</div>
+                 <div style="color:#fff;font-size:18px;">失败次数</div>
+             </li>
+         </ul>
+         <!--奥体中心-->
+         <div class="Cbottom Cbottom1">
+             <div class="left">
+                 <ul>
+                     <li><img src="img/green.gif" alt=""></li>
+                     <li>奥体东北</li>
+                 </ul>
+                 <ul>
+                     <li><img src="img/green.gif" alt=""></li>
+                     <li>奥体东北</li>
+                 </ul>
+             </div>
+             <div class="right">
+                 <ul>
+                     <li><img src="img/green.gif" alt=""></li>
+                     <li>奥体东北</li>
+                 </ul>
+                 <ul>
+                     <li><img src="img/green.gif" alt=""></li>
+                     <li>奥体东北</li>
+                 </ul>
+             </div>
+         </div>
+        <!--云龙湖景区-->
+        <div class="Cbottom Cbottom2">
+            <div class="imgbox">
+                <div class="lunbo">
+                    <div class="spinner" style="position:absolute;left:220px;top:93px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:280px;top:80px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:400px;top:106px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:480px;top:110px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:557px;top:114px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:614px;top:126px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--万达广场-->
+        <div class="Cbottom Cbottom2 Cbottom3">
+            <div class="imgbox">
+                <div class="lunbo">
+                    <div class="spinner" style="position:absolute;left:210px;top:180px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:498px;top:120px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:210px;top:450px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--苏宁广场-->
+        <div class="Cbottom Cbottom2 Cbottom4">
+            <div class="imgbox">
+                <div class="lunbo">
+                    <div class="spinner" style="position:absolute;left:330px;top:56px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:210px;top:350px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:490px;top:320px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    <div class="spinner" style="position:absolute;left:360px;top:380px;">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右-->
+    <div class="right">
+        <!--右上-->
+        <div class="Ltop Rtop">
+            <ul class="cjxz">
+                <li>场景选择:</li>
+                <li>
+                    <select name="" id="select1">
+                        <option value="">商场</option>
+                        <option value="">露天场馆</option>
+                    </select>
+                </li>
+                <li class="erji">
+                    <select name="" id="select2">
+                        <optgroup label="商场">
+                            <option>奥体中心</option>
+                            <option>万达广场</option>
+                            <option>苏宁广场</option>
+                        </optgroup>
+                        <optgroup label="露天场馆">
+                            <option>云龙湖景区</option>
+                        </optgroup>
+                    </select>
+                </li>
+            </ul>
+            <ul class="sqxz">
+                <li>扇区选择:</li>
+                <li>
+                    <select name="" id="select3">
+                        <optgroup label="奥体中心">
+                            <option>全部</option>
+                            <option value="46011024573549">奥体东北</option>
+							<option value="46011024573550">奥体东南</option>
+							<option value="46011024573551">奥体西北</option>
+							<option value="46011024573552">奥体西南</option>
+                        </optgroup>
+                        <optgroup label="万达广场">
+                            <option>全部</option>
+                            <option value="46011061924657">241893商业楼2F6号弱电井</option>
+							<option value="46011061924913">241894商业楼2F2号弱电井</option>
+							<option value="46011061925169">241895soho1号15F弱电井</option>
+							<option value="46011061925425">241896soho2号15F弱电井</option>
+							<option value="46011061925681">241897soho6号5F弱电井</option>
+							<option value="46011061925937">241898soho7号5F弱电井</option>
+                        </optgroup>
+                        <optgroup label="苏宁广场">
+                            <option>全部</option>
+                            <option value="46011062724657">49_徐州富景广场</option>
+							<option value="46011062724658">50_徐州富景广场</option>
+							<option value="46011062724659">51_徐州富景广场</option>
+							<option value="46011062724660">52_徐州富景广场</option>
+							<option value="46011062724661">53_徐州富景广场</option>
+							<option value="46011062796596">52_华联清风棋院</option>
+							<option value="46011062796597">53_华联清风棋院</option>
+							<option value="46011062796598">54_华联清风棋院</option>
+							<option value="46011223425841">49_11号弱电井,2F弱电井</option>
+							<option value="46011223425842">50_1号弱电井,B1F弱电井</option>
+							<option value="46011223425843">51_1号弱电井,2F弱电井</option>
+							<option value="46011223425844">52_2号弱电井,B1F弱电井</option>
+							<option value="46011223425845">53_3号弱电井,B1F弱电井</option>
+							<option value="46011223425846">54_4号弱电井,4F弱电井</option>
+							<option value="46011223425585">49_5号弱电井,B1F弱电井</option>
+							<option value="46011223425586">50_6号弱电井,B1F弱电井</option>
+							<option value="46011223425587">51_7号弱电井,B2F弱电井</option>
+							<option value="46011223425588">52_8号弱电井,3F弱电井</option>
+							<option value="46011223425589">53_9号弱电井,1F弱电井</option>
+							<option value="46011223425590">54_10号弱电井,B2F弱电井</option>
+                        </optgroup>
+                        <optgroup label="云龙湖景区">
+                            <option>全部</option>
+                            <option value="46011062490161">49_堤坝路大石头</option>
+							<option value="46011062490162">50_堤坝路大石头</option>
+							<option value="46011062490163">51_湖中路监控杆</option>
+							<option value="46011062490164">52_湖中路监控杆</option>
+							<option value="46011062490165">53_儿童游乐场</option>
+							<option value="46011062490166">54_儿童游乐场</option>
+							<option value="46011062490167">55_艺术馆南</option>
+							<option value="46011062490168">56_艺术馆南</option>
+							<option value="46011062490417">49_休闲中心大伞 </option>
+							<option value="46011062490418">50_休闲中心大伞</option>
+							<option value="46011062889777">49_利尔德搬迁</option>
+							<option value="46011062889778">50_利尔德搬迁</option>
+							<option value="46011062889779">51_利尔德搬迁</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li class="erji">
+                    <select name="" id="select4">
+                            <option>上行流量</option>
+                            <option>下行流量</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <!--右中-->
+        <div class="Lcenter">
+             <div id="chart1" style="width:100%;height:100%;"></div>
+        </div>
+        <!--右下-->
+            <!--即时通信类：-->
+            <div class="Lbottom Rbottom tongxin-div">
+                <div class="title">业务排名表</div>
+                <ul class="title2">
+                    <li>即时通信</li>
+                    <li>接入次数</li>
+                    <li class="teshu">使用人数</li>
+                    <li>流量</li>
+                </ul>
+                <div class="data">
+                    <div class="huadong">
+                    	<!-- 
+                            <ul>
+                                <li>微信</li>
+                                <li>623446</li>
+                                <li>14706</li>
+                                <li>2146941751</li>
+                            </ul>
+                            <ul>
+                                <li>QQ</li>
+                                <li>181585</li>
+                                <li>8265</li>
+                                <li>1630556913</li>
+                            </ul>
+                            <ul>
+                                <li>陌陌</li>
+                                <li>766</li>
+                                <li>68</li>
+                                <li>16036382</li>
+                            </ul>
+                            <ul>
+                                <li>易信</li>
+                                <li>321</li>
+                                <li>19</li>
+                                <li>672897</li>
+                            </ul>
+                            <ul>
+                                <li>飞聊</li>
+                                <li>5837</li>
+                                <li>58</li>
+                                <li>1700</li>
+                            </ul>
+                            <ul>
+                                <li>米聊</li>
+                                <li>97</li>
+                                <li>18</li>
+                                <li>127171</li>
+                            </ul>
+                            <ul>
+                                <li>微爱</li>
+                                <li>30</li>
+                                <li>19</li>
+                                <li>17000</li>
+                            </ul>
+                            <ul>
+                                <li>阿里旺旺</li>
+                                <li>44</li>
+                                <li>14</li>
+                                <li>63109</li>
+                            </ul>
+                            <ul>
+                                <li>MSN</li>
+                                <li>69</li>
+                                <li>19</li>
+                                <li>13000</li>
+                            </ul>
+                            <ul>
+                                <li>遇见</li>
+                                <li>22</li>
+                                <li>10</li>
+                                <li>10000</li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+            </div>
+            <!--视频类：-->
+            <div class="Lbottom Rbottom shipin-div">
+                <div class="title">业务排名表</div>
+                <ul class="title2">
+                    <li>视频类</li>
+                    <li>接入次数</li>
+                    <li class="teshu">使用人数</li>
+                    <li>流量</li>
+                </ul>
+                <div class="data">
+                    <div class="huadong">
+                    	<!-- 
+                        <ul>
+                            <li>腾讯视频</li>
+                            <li>31735</li>
+                            <li>1474</li>
+                            <li>3653309770</li>
+                        </ul>
+                        <ul>
+                            <li>爱奇艺</li>
+                            <li>4555</li>
+                            <li>184</li>
+                            <li>171020022</li>
+                        </ul>
+                        <ul>
+                            <li>快手</li>
+                            <li>2531</li>
+                            <li>45</li>
+                            <li>206370621</li>
+                        </ul>
+                        <ul>
+                            <li>天翼视讯</li>
+                            <li>56</li>
+                            <li>7</li>
+                            <li>11777992</li>
+                        </ul>
+                        <ul>
+                            <li>优酷</li>
+                            <li>516</li>
+                            <li>136</li>
+                            <li>6179773</li>
+                        </ul>
+                        <ul>
+                            <li>乐视网</li>
+                            <li>619</li>
+                            <li>61</li>
+                            <li>4311055</li>
+                        </ul>
+                        <ul>
+                            <li>搜狐视频</li>
+                            <li>722</li>
+                            <li>77</li>
+                            <li>2899092</li>
+                        </ul>
+                        <ul>
+                            <li>56视频</li>
+                            <li>26</li>
+                            <li>5</li>
+                            <li>1516413</li>
+                        </ul>
+                        <ul>
+                            <li>哔哩哔哩</li>
+                            <li>49</li>
+                            <li>10</li>
+                            <li>64417731</li>
+                        </ul>
+                        <ul>
+                            <li>芒果TV</li>
+                            <li>29</li>
+                            <li>7</li>
+                            <li>101487</li>
+                        </ul>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <!--网页类：-->
+            <div class="Lbottom Rbottom web-div">
+                <div class="title">业务排名表</div>
+                <ul class="title2">
+                    <li>网页类</li>
+                    <li>接入次数</li>
+                    <li class="teshu">使用人数</li>
+                    <li>流量</li>
+                </ul>
+                <div class="data">
+                    <div class="huadong">
+                    	<!-- 
+                        <ul>
+                            <li>腾讯网</li>
+                            <li>13061</li>
+                            <li>1656</li>
+                            <li>172405286</li>
+                        </ul>
+                        <ul>
+                            <li>qq空间</li>
+                            <li>32</li>
+                            <li>21</li>
+                            <li>244613</li>
+                        </ul>
+                        <ul>
+                            <li>淘宝</li>
+                            <li>22684</li>
+                            <li>3336</li>
+                            <li>142056145</li>
+                        </ul>
+                        <ul>
+                            <li>腾讯新闻</li>
+                            <li>2059</li>
+                            <li>285</li>
+                            <li>109634972</li>
+                        </ul>
+                        <ul>
+                            <li>大申社区</li>
+                            <li>583748619</li>
+                            <li>583748619</li>
+                            <li>1700</li>
+                        </ul>
+                        <ul>
+                            <li>新浪网</li>
+                            <li>583748619</li>
+                            <li>583748619</li>
+                            <li>1700</li>
+                        </ul>
+                        <ul>
+                            <li>美团</li>
+                            <li>22684</li>
+                            <li>3336</li>
+                            <li>142056145</li>
+                        </ul>
+                        <ul>
+                            <li>今日头条</li>
+                            <li>7891</li>
+                            <li>724</li>
+                            <li>22792912</li>
+                        </ul>
+                        <ul>
+                            <li>UC网站</li>
+                            <li>20</li>
+                            <li>6</li>
+                            <li>60029</li>
+                        </ul>
+                        <ul>
+                            <li>腾讯新闻</li>
+                            <li>13066</li>
+                            <li>1856</li>
+                            <li>172405286</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+</body>
+</html>

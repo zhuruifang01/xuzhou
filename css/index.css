@@ -1,0 +1,440 @@
+body,html,ul,li,a{
+    margin:0;padding:0;
+    list-style:none;
+    text-decoration:none;
+}
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    min-width:1400px;
+    min-height:700px;
+    background:#000;
+}
+/*头部*/
+.header{
+        width:100%;
+        height:60px;
+        /*border-bottom:1px solid #eee;*/
+        background:url("../img/bg1.png");
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        position:relative;
+    }
+    .header .logo{
+        width:170px;
+        height:60%;
+        margin-left:50px;
+        margin-top:12px;
+        float:left;
+    }
+    .header .logo img{
+        width:100%;
+        height:100%;
+        border:0;
+    }
+    .header .title{
+        width:auto;
+        height:100%;
+        margin:0 auto;
+        line-height:60px;
+        text-align:center;
+        font-size:33px;
+        color:#fff;
+        position:absolute;
+        left:0;right:0;margin:auto;
+    }
+
+
+/*主体部分*/
+.contain{
+        width:100%;
+        height:100%;
+        background:url("../img/bg2.gif");
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        position:relative;
+    }
+    .contain .left{
+        width:25%;
+        height:100%;
+        float:left;
+        background:rgba(180,100,242,0.15);
+    }
+    .contain .center{
+        width:45%;
+        height:100%;
+        float:left;
+        margin:0 auto;
+        /*background:#ccc;*/
+        position:absolute;
+        left:0;right:0;top:30px;margin:auto;
+        /*border-left:1px solid #e1e1e1;*/
+        /*border-right:1px solid #e4e4e4;*/
+        box-sizing:border-box;
+    }
+    .contain .right{
+        width:25%;
+        height:100%;
+        float:right;
+        background:rgba(180,100,242,0.15);
+    }
+    /*左*/
+    .contain .left .Ltop ,.contain .left .Lcenter ,.contain .left .Lbottom,.contain .right .Ltop ,.contain .right .Lcenter ,.contain .right .Lbottom{
+            width:95%;
+            height:33%;
+            padding-bottom:5px;
+            margin:0 auto;
+            box-sizing:border-box;
+            overflow:hidden;
+        }
+        .contain .left .Ltop,.contain .right .Ltop{
+            padding-top:5px;
+        }
+        .contain .left .Lbottom,.contain .right .Lbottom{
+            padding-bottom:10px;
+        }
+        /*左上*/
+        .contain .left .Ltop .zhibiao{
+                width:100%;
+                height:50%;
+                /*padding-bottom:5px;*/
+                box-sizing:border-box;
+            }
+            .contain .left .Ltop .zhibiao .title{
+                width:100%;
+                height:25%;
+                /*border-bottom:1px solid #e4e4e4;*/
+                box-sizing:border-box;
+                /*background:#3399ff;*/
+                text-align:left;
+                color:#55e6de;
+                font-size:20px;
+                font-weight:bold;
+                line-height:10px;
+            }
+            .contain .left .Ltop .zhibiao .data{
+                width:100%;
+                height:75%;
+                overflow:hidden;
+            }
+            .contain .left .Ltop .zhibiao .data .huadong{
+                width:100%;
+                height:100px;
+            }
+            .contain .left .Ltop .zhibiao .data ul{
+                width:100%;
+                height:11.111111111%;
+                box-sizing:border-box;
+            }
+            .contain .left .Ltop .zhibiao .data ul li{
+                width:70%;
+                height:100%;
+                float:left;
+                box-sizing:border-box;
+                text-align:left;
+                color:#fff;
+                font-size:16px;
+                font-weight:normal;
+                line-height:10px;
+                /*border-left:1px solid #e4e4e4;*/
+                /*border-right:1px solid #e4e4e4;*/
+                /*border-bottom:1px solid #e4e4e4;*/
+            }
+            .contain .left .Ltop .zhibiao .data ul li:last-child{
+                 width:30%;
+                text-align:right;
+                border-left:0;
+            }
+        /*左中*/
+        .contain .left .Lcenter,.contain .right .Lcenter{
+                height:31%;
+            }
+        /*左下*/
+        .contain .left .Lbottom,.contain .right .Lbottom{
+                height:36%;
+                text-align:center;
+            }
+            .contain .left .Lbottom .title,.contain .right .Lbottom .title{
+                width:100%;
+                height:16%;
+                color:#55e6de;
+                font-size:20px;
+                /*background:#3399ff;*/
+            }
+            .contain .left .Lbottom .title2,.contain .right .Lbottom .title2{
+                width:100%;
+                height:14%;
+                border:0;
+            }
+
+            .contain .left .Lbottom .data,.contain .right .Lbottom .data{
+                width:100%;
+                height:70%;
+                overflow:hidden;
+            }
+            .contain .left .Lbottom .data .huadong{
+                width:100%;
+                height:100px;
+            }
+            .contain .left .Lbottom .data ul,.contain .right .Lbottom .data ul{
+                width:100%;
+                height:10%;
+            }
+            .contain .left .Lbottom ul li{
+                width:33%;
+                height:100%;
+                font-size:12px;
+                font-weight:normal;
+                color:#fff;
+                float:left;
+                /*border-left:1px solid #e4e4e4;*/
+                /*border-bottom:1px solid #e4e4e4;*/
+                box-sizing:border-box;
+            }
+
+            .contain .left .Lbottom ul li{
+                width:30%;
+                /*border-right:1px solid #e4e4e4;*/
+            }
+            .contain .left .Lbottom ul li:first-child{
+                width:40%;
+            }
+            .contain .left .Lbottom .title2 li{
+                font-size:16px;
+            }
+    /*右*/
+         /*右下*/
+         .contain .right .Rbottom ul li{
+                 width:25%;
+                 height:100%;
+                 font-size:16px;
+                 font-weight:normal;
+                 color:#fff;
+                 float:left;
+                 /*border-left:1px solid #e4e4e4;*/
+                 /*border-bottom:1px solid #e4e4e4;*/
+                 box-sizing:border-box;
+             }
+            .contain .right .Rbottom .data .huadong{
+                width:100%;
+                height:100px;
+            }
+            .contain .right .Rbottom .data .huadong ul{
+                width:100%;
+                height:6.6666666667%;
+                box-sizing:border-box;
+            }
+             .contain .right .Rbottom ul li{
+                width:28%;
+             }
+             .contain .right .Rbottom ul li:last-child{
+                width:16%;
+             }
+         /*右中*/
+         .contain .right .Lcenter{
+                 height:40%;
+         }
+         /*右上*/
+         .contain .right .Rtop{
+               height:22%;
+               /*background:red;*/
+         }
+         .right .Rtop ul{
+                 width:100%;
+                 height:50%;
+             }
+             .right .Rtop ul li{
+                 float:left;
+                 width:36%;
+                 height:100%;
+                 line-height:50px;
+                 font-size:16px;
+                 color:#fff;
+             }
+            .right .Rtop ul li:first-child{
+                width:25%;
+            }
+            .right .Rtop ul li select{
+                 width:98%;
+                 height:50%;
+                 background:none;
+                 color:#fff;
+                 font-size:14px;
+                 text-align:center;
+            }
+            .right .Rtop ul li select option{
+                color:#000;
+            }
+    /*中*/
+     .center{position:relative}
+     .center .Ctop{
+            width:100%;
+            height:140px;
+            font-size:25px;
+            color:#494949;
+            text-align:center;
+            line-height:140px;
+            /*border-bottom:1px solid #e4e4e4;*/
+        }
+        .center .Ctop li{
+            width:26.6%;
+            height:100%;
+            float:left;
+            /*border-right:1px solid #e4e4e4;*/
+            box-sizing:border-box;
+        }
+        .center .Ctop li:first-child{
+            width:20%;
+            position:relative;
+        }
+        .center .Ctop li:last-child{
+            border:0;
+        }
+        .center .Ctop li:first-child span{
+            width:130px;height:40px;
+            border-radius:5px;
+            background:#75949c;
+            text-align:center;
+            line-height:40px;
+            font-size:27px;
+            color:#fff;
+            position:absolute;
+            left:0;right:0;top:0;bottom:0;
+            margin:auto;
+        }
+        .center .Ctop li div{
+            width:100%;
+            height:50%;
+            line-height:70px;
+        }
+        /*中下--奥体中心*/
+        .center .Cbottom1{
+           width:70%;
+           height:350px;
+           /*background:red;*/
+           position:absolute;
+           left:0;right:0;top:0;bottom:0;
+           margin:auto;
+        }
+        .center .Cbottom1 .left,.center .Cbottom .right{
+            width:30%;
+            height:120px;
+            float:left;
+            background:none;
+            float:left;
+        }
+        .center .Cbottom1 .right{
+            float:right;
+        }
+        .center .Cbottom1 div ul{
+            width:100%;
+            height:60px;
+        }
+        .center .Cbottom1 div ul li{
+            width:30%;
+            height:100%;
+            float:left;
+            position:relative;
+        }
+        .center .Cbottom1 div ul li:last-child{
+            width:70%;
+            float:right;
+            text-align:right;
+            line-height:60px;
+            color:#fff;
+            font-size:18px;
+        }
+        .center .Cbottom1 div ul li img{
+            position:absolute;
+            top:0;bottom:0;left:0;right:0;
+            margin:auto;
+        }
+        /*中下--云龙湖景区*/
+        .center .Cbottom2{
+            width:100%;
+            height:650px;
+            margin:0 auto;
+            /*display:none;*/
+            /*position:absolute;*/
+            /*bottom:0;*/
+        }
+        .center .Cbottom2 .imgbox{
+            width:100%;
+            height:100%;
+            position:relative;
+        }
+        .center .Cbottom2 .imgbox .lunbo{
+            width:100%;
+            height:100%;
+            position:relative;
+            background:url("../img/bg22.png");
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            border-radius:15px;
+        }
+        /*万达广场*/
+        .center .Cbottom3 .imgbox .lunbo{
+            width:100%;
+            height:100%;
+            position:relative;
+            background:url("../img/bg_wangda.png");
+            background-repeat:no-repeat;
+            background-size:100% 90%;
+            border-radius:15px;
+        }
+        /*苏宁广场*/
+        .center .Cbottom4 .imgbox .lunbo{
+            width:100%;
+            height:100%;
+            position:relative;
+            background:url("../img/bg_suning.png");
+            background-repeat:no-repeat;
+            background-size:100% 90%;
+            border-radius:15px;
+        }
+        /*呼吸灯*/
+        .spinner {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            /*margin: 100px auto;*/
+        }
+
+        .double-bounce1, .double-bounce2 {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #67CF22;
+            opacity:0.6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-animation: bounce 5.0s infinite ease-in-out;
+            animation: bounce 2.0s infinite ease-in-out;
+        }
+        .double-bounce2{
+            opacity:1;
+        }
+        .double-bounce2 {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+        }
+
+        @-webkit-keyframes bounce {
+            0%, 100% { -webkit-transform: scale(0.0) }
+            50% { -webkit-transform: scale(1.0) }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: scale(0.0);
+                -webkit-transform: scale(0.0);
+            } 50% {
+                  transform: scale(1.0);
+                  -webkit-transform: scale(1.0);
+              }
+        }
+
+
+

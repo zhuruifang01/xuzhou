@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 会员登录注册action -->
+	<package name="main-struts" namespace="/" extends="base">	
+		<action name="duanwu" class="mainAction" method="duanwu">
+			<result name="json" type="json">
+				 <param name="root">responseJson</param>
+			</result>
+		</action>
+		<action name="duanwu2" class="mainAction" method="duanwu2">
+			<result name="json" type="json">
+				 <param name="root">responseJson</param>
+			</result>
+		</action>
+	</package>
+	
+</struts>
+
